@@ -5,7 +5,6 @@ CREATE TABLE [dbo].[Customer]
 [Address] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [Phone] [nchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [DOJ] [datetime] NULL,
-[lastname] [varbinary] (50) NULL,
-[firstname] [varbinary] (50) NULL
+[lastname] [varbinary] (50) NULL
 ) ON [PRIMARY]
 GO
