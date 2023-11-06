@@ -10,3 +10,7 @@ CREATE TABLE [dbo].[Customer]
 [state] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
+CREATE CLUSTERED INDEX [ci_customer] ON [dbo].[Customer] ([CustomerName]) ON [PRIMARY]
+GO
+CREATE NONCLUSTERED INDEX [ci_customer1] ON [dbo].[Customer] ([CustomerName], [state]) ON [PRIMARY]
+GO
