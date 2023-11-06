@@ -6,6 +6,7 @@ CREATE TABLE [dbo].[Customer]
 [Phone] [nchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [DOJ] [datetime] NULL,
 [name] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-[city] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+[city] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[town] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF_Customer_town] DEFAULT ('test')
 ) ON [PRIMARY]
 GO
